@@ -127,7 +127,7 @@ export function editarAlumno() {
     mostrar(array);
 }
 
-//agrega elementos al array
+//funcion agregar alumno
 export function agregarAlumno() {
     let formularioAgregar = document.querySelector("#formulario");
     let arrAgregarAlumno = [];
@@ -152,6 +152,7 @@ export function agregarAlumno() {
     limpiarFormulario("formulario")
 }
 
+//funcion alertas con libreria sweetalert
 function alertas(icono, mensaje, toast) {
     Swal.fire({
         toast: toast,
@@ -186,6 +187,7 @@ export function buscarAlumno(bus) {
     mostrar(dataArr)
 }
 
+//funcion filtrar
 export function filtrarAlumnos() {
     let arraynuevo = array.map((x) => x);
     let filtrar = document.getElementById("filtrar").value;
@@ -226,6 +228,8 @@ export function filtrarAlumnos() {
 
 
 //notass
+
+//funcion muestra notas
 
 export function mostrarNotas(array) {
     try {
