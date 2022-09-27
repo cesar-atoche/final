@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Sistema de Alumnos - Notas</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="./css/interfaz.css" />
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script defer src="./js/app.js" type="module"></script>
+    
+</head>
+
+<body class="p-3 m-0 border-0 bd-example" id="body">
+
+    <!-- Example Code -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">NICOLANDIA</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <!-- <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li> -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Alumnos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="alumnos.html">Notas</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link disabled">Disabled</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="container my-3 ">
+        <div class="col-md-12 py-2">
+        </div>
+
+
+
+        <div class="col-md-12 py-3 text-center ">
+            <!-- <button class="btn-primary" id="grabar">Grabar</button> -->
+            <table class="table"  CELLPADDING=10 CELLSPACING=0>
+                <thead class="text-center font-weight-bold table-dark">
+                    <tr class="text-white " >
+                        <td>ID</td>
+                        <td>NOMBRES</td>
+                        <td>APELLIDOS</td>
+                        <td>CURSO</td>
+                        <td>NOTA1</td>
+                        <td>NOTA2</td>
+                        <td>NOTA3</td>
+                        <td>PROMEDIO</td>
+                        <td>   </td>
+                        <td>   </td>
+                    </tr>
+                </thead>
+                <tbody id="tabla-datos-notas" class="small">
+                
+
+                </tbody>
+
+
+            </table>
+
+        </div>
+        <br>
+        <font size=1 color="736E7D">
+            
+        </font>
+    </div>
+    
+    
+    
+</body>
+
+</html>

@@ -1,0 +1,114 @@
+[
+    {   
+        "id":"1",
+        "nombre": "Cesarin Alexis",
+        "apellido": "Atoche Paredes",
+        "genero": "M",
+        "nacimiento": "1984-04-09",
+        "curso": "JavaScript",
+        "notas": [
+            "10",
+            "20",
+            "15"
+        ],
+        "promedio": ""
+    },
+    {
+        "id":"2",
+        "nombre": "Nicolle Valentina",
+        "apellido": "Cuellar Montenegro",
+        "genero": "F",
+        "nacimiento": "1997-07-04",
+        "curso": "Python",
+        "notas": [
+            "10",
+            "16",
+            "14"
+        ],
+        "promedio": ""
+    },
+    {
+        "id":"3",
+        "nombre": "Diofinis",
+        "apellido": "Ballesteros Castro",
+        "genero": "M",
+        "nacimiento": "1990-08-03",
+        "curso": "Sql",
+        "notas": [
+            "10",
+            "19",
+            "19"
+        ],
+        "promedio": ""
+    },
+    {
+        "id":"4",
+        "nombre": "Juan Carlos",
+        "apellido": "Perez pio",
+        "genero": "M",
+        "nacimiento": "1995-07-15",
+        "curso": "JavaScript",
+        "notas": [
+            "11",
+            "12",
+            "18"
+        ],
+        "promedio": ""
+    },
+    {
+        "id":"5",
+        "nombre": "Luis",
+        "apellido": "Atoche Paredes",
+        "genero": "M",
+        "nacimiento": "1984-04-09",
+        "curso": "JavaScript",
+        "notas": [
+            "12",
+            "14",
+            "17"
+        ],
+        "promedio": ""
+    },
+    {
+        "id":"6",
+        "nombre": "Abraham",
+        "apellido": "Cuellar Montenegro",
+        "genero": "F",
+        "nacimiento": "1997-07-04",
+        "curso": "Python",
+        "notas": [
+            "10",
+            "20",
+            "16"
+        ],
+        "promedio": ""
+    },
+    {
+        "id":"7",
+        "nombre": "Dereck orlando",
+        "apellido": "Ballesteros Castro",
+        "genero": "M",
+        "nacimiento": "1990-08-03",
+        "curso": "Sql",
+        "notas": [
+            "11",
+            "19",
+            "16"
+        ],
+        "promedio": ""
+    },
+    {
+        "id":"8",
+        "nombre": "Juan Luis",
+        "apellido": "Castro ",
+        "genero": "M",
+        "nacimiento": "1995-07-15",
+        "curso": "JavaScript",
+        "notas": [
+            "9",
+            "18",
+            "16"
+        ],
+        "promedio": ""
+    }
+]

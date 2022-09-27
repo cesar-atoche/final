@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Sistema de Alumnos </title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <link rel="stylesheet" href="./css/interfaz.css" />
+
+    <!-- <script defer src="./js/base.js"></script>
+    <script defer src="./js/java.js"></script> -->
+    <script defer src="./js/app.js" type="module"></script>
+</head>
+
+<body class="p-3 m-0 border-0 bd-example">
+
+    <!-- Example Code -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">NICOLANDIA</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <!-- <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li> -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Alumnos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="alumnos.html">Notas</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link disabled">Disabled</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="container my-3 ">
+        <div class="col-md-12 py-2">
+            <table width="100%">
+
+                <tr>
+                    <td><select id="filtrar" class="form-select" aria-label="Default select example"
+                            >
+                            <option selected>Filtrar</option>
+                            <option value="1">Nombre</option>
+                            <option value="2">Apellido </option>
+                            <option value="3">Curso</option>
+                            <option value="4">Genero </option>
+
+                        </select></td>
+
+                    <td width="10%"></td>
+                    <td width="10%"></td>
+                    <td width="5%"></td>
+                    <td>
+                        <form class="d-flex" role="search">
+                            <input class="form-control me-1" id="buscar" type="search" placeholder="Busca en nombres y apellidos"
+                                aria-label="Search">
+                        </form>
+                    </td>
+                    <td width="10%"></td>
+                    <td width="10%"></td>
+                    <td width="5%"></td>
+                    <td><input type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalito"
+                            data-bs-whatever="@fat" value="+ NUEVO ALUMNO"></input>
+                        <!-- aqui comienza modal -->
+
+                        <div class="modal fade" id="modalito" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true" style="display: none;">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">Agregar Alumno</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <br>
+                                    <div class="modal-body">
+                                        <div class="container-fluid">
+
+
+                                            <form id="formulario">
+                                                <div class="row mb-3">
+                                                    <label for="usuario" class="col-3 col-form-label">Nombres : </label>
+                                                    <div class="col-9">
+                                                        <input type="text" class="form-control" id="nombre" required>
+                                                    </div>
+                                                </div>
+                                                <div class="row mb-3">
+                                                    <label for="usuario" class="col-3 col-form-label">Apellidos :
+                                                    </label>
+                                                    <div class="col-9">
+                                                        <input type="text" class="form-control" id="apellido" required>
+                                                    </div>
+                                                </div>
+                                                <div class="row mb-3">
+                                                    <label for="usuario" class="col-3 col-form-label">Genero : </label>
+                                                    <div class="col-9">
+                                                        <select id="genero" class="form-select" aria-label="Genero">
+                                                            <option selected>Genero</option>
+                                                            <option value="M">M</option>
+                                                            <option value="F">F</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="row mb-3">
+                                                    <label for="usuario" class="col-3 col-form-label">Nacimiento :
+                                                    </label>
+                                                    <div class="col-9">
+                                                        <input type="date" class="form-control" id="nacimiento">
+                                                    </div>
+                                                </div>
+                                                <div class="row mb-3">
+                                                    <label for="usuario" class="col-3 col-form-label">Curso : </label>
+                                                    <div class="col-9">
+                                                        <input type="text" class="form-control" id="curso" required>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Cerrar</button>
+                                        <input type="input" class="btn btn-primary" id="inputAgregar" value="Guardar"
+                                            data-bs-dismiss="modal"></input>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- aqui acaba modal -->
+
+                    </td>
+                </tr>
+            </table>
+
+
+
+        </div>
+
+
+
+        <div class="col-md-12 py-3 text-center ">
+            <!-- <button class="btn-primary" id="grabar">Grabar</button> -->
+            <table class="table">
+                <thead class="text-center font-weight-bold table-dark">
+                    <tr class="text-white " >
+                        <td>ID</td>
+                        <td>CODIGO</td>
+                        <td>NOMBRES</td>
+                        <td>APELLIDOS</td>
+                        <td>GENERO</td>
+                        <td>NACIMIENTO</td>
+                        <td>CURSO</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </thead>
+                <tbody id="tabla-datos" class="small">
+
+                </tbody>
+
+
+            </table>
+
+        </div>
+        <br>
+        <font size=1 color="736E7D">
+            <p class="text-left font-italic"><i>* Sistema de alumnos permite: agregar, eliminar, editar, filtrar (nombre,
+                    apellido,curso, genero), buscar por nombre.
+                     <br>  * El codigo se genera con las primeras letras de los nombres, apellidos, nacimiento, genero.
+                     <br> * Guarda en LocalStorage - Libreria sweetalert</i>
+            </p>
+        </font>
+    </div>
+    <!-- modal editar -->
+
+    <div class="modal fade" id="modal-editar" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"
+        style="display: none;">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Editar Alumno</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <br>
+                <div class="modal-body">
+                    <div class="container-fluid">
+
+
+                        <form id="formulario1">
+                            <div class="row mb-3">
+                                <label for="usuario" class="col-3 col-form-label">Nombres : </label>
+                                <div class="col-9">
+                                    <input type="text" class="form-control" id="edicion-nombre">
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <label for="usuario" class="col-3 col-form-label">Apellidos : </label>
+                                <div class="col-9">
+                                    <input type="text" class="form-control" id="edicion-apellido">
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <label for="usuario" class="col-3 col-form-label">Genero : </label>
+                                <div class="col-9">
+                                    <input type="text" class="form-control" id="edicion-genero" maxlength="1">
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <label for="usuario" class="col-3 col-form-label">Nacimiento : </label>
+                                <div class="col-9">
+                                    <input type="date" class="form-control" id="edicion-nacimiento">
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <label for="usuario" class="col-3 col-form-label">Curso : </label>
+                                <div class="col-9">
+                                    <input type="text" class="form-control" id="edicion-curso">
+                                    <input type="hidden" id="indice" value="">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <input type="button" class="btn btn-primary" id="input-editar" value="Guardar"
+                        data-bs-dismiss="modal"></input>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
